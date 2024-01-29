@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hello {
+    font-size: 50px;
+}
+
+.hello h1{
+    padding-left: 70px;
+}
+
+.hello button {
+    font-size: 30px;
+    padding: 20px 50px;
+}
