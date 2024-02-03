@@ -1,4 +1,4 @@
-import {Link, NavLink} from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 export default function Header() {
     return (
@@ -33,7 +33,7 @@ export default function Header() {
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <NavLink to="/"
-                                    className={(isActive) =>
+                                    className={({ isActive }) =>
                                         `inline py-2 pr-4 pl-3 ${isActive ? "text-orange-600" : "text-slate-500"}
                                          duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
@@ -42,8 +42,8 @@ export default function Header() {
                                 </NavLink>
                             </li>
                             <li>
-                                 <NavLink to="/About"
-                                    className={(isActive) =>
+                                <NavLink to="/About"
+                                    className={({ isActive }) =>
                                         `block py-2 pr-4 pl-3 ${isActive ? "text-orange-600" : "text-slate-500"}
                                          duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
@@ -51,7 +51,16 @@ export default function Header() {
                                     About
                                 </NavLink>
                             </li>
-                            
+                            <li>
+                                <NavLink to="/contact"
+                                    className={({ isActive }) =>
+                                        `block py-2 pr-4 pl-3 ${isActive ? "text-orange-600" : "text-slate-500"}
+                                         duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Contact
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
